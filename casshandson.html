@@ -417,7 +417,33 @@ background-color:  #000000;
     top: 0%;
     left: 75%;
     background: var(--penguin-skin);
-    /*  */
+    /* Attach a Fallback value to a CSS Variable */
+    .penguin-top {
+    top: 10%;
+    left: 25%;
+
+    /* Change code below this line */
+    background: var(--penguin-skin, black);
+    /* Change code above this line */
+
+    width: 50%;
+    height: 45%;
+    border-radius: 70% 70% 60% 60%;
+  }
+
+  .penguin-bottom {
+    top: 40%;
+    left: 23.5%;
+
+    /* Change code below this line */
+    background: var(--penguin-skin, black);
+    /* Change code above this line */
+
+    width: 53%;
+    height: 45%;
+    border-radius: 70% 70% 100% 100%;
+  }
+  /*  */
 
 
         
